@@ -29,7 +29,7 @@ sudo docker run --rm hello-world
 
 # Installing Docker compose
 # Replace with the latest version from https://github.com/docker/compose/releases/latest
-DOCKER_COMPOSE_VERSION="2.1.1"
+DOCKER_COMPOSE_VERSION="2.18.1"
 # For 64-bit OS use:
 DOCKER_COMPOSE_ARCH="aarch64"
 # For 32-bit OS use:
