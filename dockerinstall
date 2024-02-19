@@ -27,9 +27,15 @@ sudo systemctl enable --now docker
 # Test Docker
 sudo docker run --rm hello-world
 
+#Create the docker group.
+sudo groupadd docker
+
+#Add your user to the docker group.
+sudo usermod -aG docker $USER
+
 # Installing Docker compose
 # Replace with the latest version from https://github.com/docker/compose/releases/latest
-DOCKER_COMPOSE_VERSION="2.18.1"
+DOCKER_COMPOSE_VERSION="2.24.6"
 # For 64-bit OS use:
 DOCKER_COMPOSE_ARCH="aarch64"
 # For 32-bit OS use:
